@@ -11,9 +11,13 @@ public class _169多数元素 {
             int count=hashMap.getOrDefault(num,0);
             hashMap.put(num,count+1);
         }
+
+
         for (Integer integer : hashMap.keySet()) {
             if (hashMap.get(integer)>flag) result=integer;
         }
+
+
         return result;
     }
     public int majorityElement1(int[] nums){
